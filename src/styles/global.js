@@ -11,7 +11,6 @@ export default createGlobalStyle`
 
     body {
         font-family: Arial, Helvetica, sans-serif;
-        background-color: darkgray;
     }
 
     button {

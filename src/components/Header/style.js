@@ -7,34 +7,32 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: center;
 
-  div{
+  div {
     display: flex;
     height: 45px;
     width: 500px;
     align-items: center;
 
-    button{
+    button {
       height: 45px;
       width: 80px;
       border: none;
+      background-color: white;
     }
-    
-   
-}
+
+    img {
+      height: 30px;
+      margin-left: 20px;
+      margin-top: 9px;
+    }
+  }
 `;
 
 export const HeaderInput = styled.input`
-height: 45px;
-width: 500px;
-display: flex;
-text-align: center;
-border: none
-
-
-
+  height: 45px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+  padding-left: 60px;
+  border: none;
 `;
-
-
-
-
-
