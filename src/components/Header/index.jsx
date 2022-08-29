@@ -1,27 +1,24 @@
 import { useState } from "react"
-import { HeaderStyled } from "./style"
+import { HeaderStyled, HeaderInput, } from "./style"
+import Lupa from "../../Images/Lupa.png"
 
-function Header({ children, className, props, renderizar }) {
 
-
-    const teste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+function Header(props) {
+    const [ValueInput, setValueInput] = useState("")
 
     return (
-
-        <HeaderStyled className={className} props={props}>
-            {
-                teste.map((element, indice) => {
-                    return (
-                        <h1 key={indice}>
-                            {indice < 5 && element}
-                        </h1>
-                    )
-                })
-            }
-
-
-        </HeaderStyled>
+        <>
+            <HeaderStyled>
+            <div>
+            <HeaderInput type="text" placeholder="Pesquise Aqui" onChange={event => setValueInput(event.target.value)} value={ValueInput} />
+            <button >
+                <img src={Lupa} alt="botao" />
+                
+            </button>
+           
+            </div>
+            </HeaderStyled>
+        </>
     )
 
 }
